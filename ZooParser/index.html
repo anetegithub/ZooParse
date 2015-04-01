@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Парсер объявлений</title>
+</head>
+<body>
+    <div>
+        <h1 id="notify"></h1>
+    </div>
+    <div>
+        <div><strong>Стоимость: </strong></div>
+        <div>
+            <label>от: </label><input type="text" id="costFrom" />
+        </div>
+        <div>
+            <label>до: </label><input type="text" id="costTo" />
+        </div>
+    </div>
+    <br />
+    <div>
+        <div><strong>Дата объявления: </strong></div>
+        <div>
+            <label>от: </label><input type="text" id="dateFrom" />
+        </div>
+        <div>
+            <label>до: </label><input type="text" id="dateTo" />
+        </div>
+    </div>
+    <br />
+    <div>
+        <div><strong>Животные: </strong></div>
+        <div>
+            <select id="animalType">
+                <option>Собаки</option>
+                <option>Кошки</option>
+                <option>Птицы</option>
+                <option>Грызуны</option>
+                <option>Рептилии</option>
+                <option>Рыбки</option>
+                <option>Насекомые</option>
+                <option>Лошади</option>
+                <option>Домашний скот</option>
+                <option>Экзотические</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <div>
+        <div><strong>Тип сделки: </strong></div>
+        <div>
+            <select id="dealType">
+                <option>Продать</option>
+                <option>Купить</option>
+                <option>Вязка</option>
+                <option>Отдать</option>
+            </select>
+        </div>
+    </div>
+    <br/>
+    <div>
+        <input type="button" id="srcBtn" value="Поиск" />
+        <input type="button" id="updBtn" value="Обновить базу данных" />
+    </div>
+    <br/>
+    <div id="content"></div>
+    <script src="/Script/jquery-1.10.2.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
